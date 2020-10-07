@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD00A71F252DBB0B008EF4CA /* UsingToolAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00A71E252DBB0B008EF4CA /* UsingToolAppTests.swift */; };
 		AD8C74CC2524835C001AE3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C74CB2524835C001AE3D5 /* AppDelegate.swift */; };
 		AD8C74CE2524835C001AE3D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C74CD2524835C001AE3D5 /* SceneDelegate.swift */; };
 		AD8C74D02524835C001AE3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C74CF2524835C001AE3D5 /* ViewController.swift */; };
@@ -15,7 +16,20 @@
 		AD8C74D82524835E001AE3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8C74D62524835E001AE3D5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD00A721252DBB0B008EF4CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD8C74C02524835C001AE3D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD8C74C72524835C001AE3D5;
+			remoteInfo = UsingToolApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AD00A71C252DBB0B008EF4CA /* UsingToolAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsingToolAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD00A71E252DBB0B008EF4CA /* UsingToolAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingToolAppTests.swift; sourceTree = "<group>"; };
+		AD00A720252DBB0B008EF4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD8C74C82524835C001AE3D5 /* UsingToolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingToolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8C74CB2524835C001AE3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD8C74CD2524835C001AE3D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD00A719252DBB0B008EF4CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD8C74C52524835C001AE3D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD00A71D252DBB0B008EF4CA /* UsingToolAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD00A71E252DBB0B008EF4CA /* UsingToolAppTests.swift */,
+				AD00A720252DBB0B008EF4CA /* Info.plist */,
+			);
+			path = UsingToolAppTests;
+			sourceTree = "<group>";
+		};
 		AD8C74BF2524835C001AE3D5 = {
 			isa = PBXGroup;
 			children = (
 				AD8C74CA2524835C001AE3D5 /* UsingToolApp */,
+				AD00A71D252DBB0B008EF4CA /* UsingToolAppTests */,
 				AD8C74C92524835C001AE3D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8C74C82524835C001AE3D5 /* UsingToolApp.app */,
+				AD00A71C252DBB0B008EF4CA /* UsingToolAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD00A71B252DBB0B008EF4CA /* UsingToolAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD00A725252DBB0B008EF4CA /* Build configuration list for PBXNativeTarget "UsingToolAppTests" */;
+			buildPhases = (
+				AD00A718252DBB0B008EF4CA /* Sources */,
+				AD00A719252DBB0B008EF4CA /* Frameworks */,
+				AD00A71A252DBB0B008EF4CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD00A722252DBB0B008EF4CA /* PBXTargetDependency */,
+			);
+			name = UsingToolAppTests;
+			productName = UsingToolAppTests;
+			productReference = AD00A71C252DBB0B008EF4CA /* UsingToolAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AD8C74C72524835C001AE3D5 /* UsingToolApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD8C74DC2524835E001AE3D5 /* Build configuration list for PBXNativeTarget "UsingToolApp" */;
@@ -96,6 +146,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					AD00A71B252DBB0B008EF4CA = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = AD8C74C72524835C001AE3D5;
+					};
 					AD8C74C72524835C001AE3D5 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -115,11 +169,19 @@
 			projectRoot = "";
 			targets = (
 				AD8C74C72524835C001AE3D5 /* UsingToolApp */,
+				AD00A71B252DBB0B008EF4CA /* UsingToolAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD00A71A252DBB0B008EF4CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD8C74C62524835C001AE3D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +195,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD00A718252DBB0B008EF4CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD00A71F252DBB0B008EF4CA /* UsingToolAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD8C74C42524835C001AE3D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +214,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD00A722252DBB0B008EF4CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8C74C72524835C001AE3D5 /* UsingToolApp */;
+			targetProxy = AD00A721252DBB0B008EF4CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD8C74D12524835C001AE3D5 /* Main.storyboard */ = {
@@ -165,6 +243,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AD00A723252DBB0B008EF4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMZ8NMX69N;
+				INFOPLIST_FILE = UsingToolAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.UsingToolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsingToolApp.app/UsingToolApp";
+			};
+			name = Debug;
+		};
+		AD00A724252DBB0B008EF4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMZ8NMX69N;
+				INFOPLIST_FILE = UsingToolAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.UsingToolAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsingToolApp.app/UsingToolApp";
+			};
+			name = Release;
+		};
 		AD8C74DA2524835E001AE3D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +440,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD00A725252DBB0B008EF4CA /* Build configuration list for PBXNativeTarget "UsingToolAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00A723252DBB0B008EF4CA /* Debug */,
+				AD00A724252DBB0B008EF4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AD8C74C32524835C001AE3D5 /* Build configuration list for PBXProject "UsingToolApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
