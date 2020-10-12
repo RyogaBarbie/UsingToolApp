@@ -5,3 +5,7 @@ brew_bundle:
 .PHONY: mint_bootstrap
 mint_bootstrap:
 	mint bootstrap
+
+.PHONY: xcodegen
+xcodegen:
+	mint run xcodegen generate

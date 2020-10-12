@@ -34,3 +34,6 @@ Carthage/Checkouts/*
 vendor/*
 
 .mint
+
+UsingToolApp.xcodeproj
+UsingToolApp.xcworkspace

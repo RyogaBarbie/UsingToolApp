@@ -1,0 +1,50 @@
+name: UsingToolApp
+
+options:
+  bundleIdPrefix: y.ryoga
+  developmentLanguage: ja
+  deploymentTarget:
+    iOS: 14.0
+  xcodeVersion: "12.0"
+  findCarthageFrameworks: false
+
+targets:
+  UsingToolApp:
+    type: application
+    platform: iOS
+    sources: UsingToolApp
+    settings:
+      base:
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        DEVELOPMENT_LANGUAGE: jp
+    configs:
+      Debug:
+        APP_DISPLAY_NAME: デバッグ用
+        # PROVISIONING_PROFILE_SPECIFIER: match Development y.ryoga.UsingToolApp-DEBUG
+      Release:
+        APP_DISPLAY_NAME: デバッグ用
+        # PROVISIONING_PROFILE_SPECIFIER: match Development y.ryoga.UsingToolApp
+  UsingToolAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: UsingToolAppTests
+
+schemes:
+  UsingToolApp:
+    build:
+      targets:
+        UsingToolApp: All
+    run:
+      config:
+        Debug
+    test:
+      gatherCoverageData: True
+      coverageTargets:
+        - UsingToolApp
+      targets:
+        name: UsingToolAppTests
+        parallelizable: true
+        randomExecutionOrder: true
+    archive:
+      config: Release
