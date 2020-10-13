@@ -1,9 +1,9 @@
-.PHONY: brew_bundle
-brew_bundle:
+.PHONY: brew
+brew:
 	brew bundle
 
-.PHONY: mint_bootstrap
-mint_bootstrap:
+.PHONY: mint
+mint:
 	mint bootstrap
 
 .PHONY: xcodegen
